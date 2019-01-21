@@ -6,9 +6,9 @@ import { CallsPage, ChatsPage, SoundsPage } from "../pages.index";
 @Component({
   template: `
     <ion-tabs color="dark">
-      <ion-tab tabIcon="call" tabTitle="Calls" [root]="callsPage"></ion-tab>
-      <ion-tab tabIcon="chatboxes" tabTitle="Chats" [root]="chatsPage"></ion-tab>
-      <ion-tab tabIcon="musical-notes" tabTitle="Sounds" [root]="soundsPage"></ion-tab>
+      <ion-tab tabIcon="call" tabTitle="Calls" tabBadge="3" [root]="callsPage"></ion-tab>
+      <ion-tab tabIcon="chatboxes" tabTitle="Chats" tabBadge="6" [root]="chatsPage"></ion-tab>
+      <ion-tab tabIcon="musical-notes" tabTitle="Sounds" tabBadge="9" [root]="soundsPage"></ion-tab>
     </ion-tabs>`
 })
 export class TabsPage {

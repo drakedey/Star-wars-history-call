@@ -6,13 +6,17 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>callsDetails</ion-title>
+  <ion-navbar color="dark">
+    <ion-title>{{ character.nombre }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <ion-card>
+    <img [src]="character.img"/>
+    <h1 class="card-title">{{ character.nombre }}</h1>
+    <p class="card-subtitle">{{ character.titulo }}</p>
+  </ion-card>
 </ion-content>

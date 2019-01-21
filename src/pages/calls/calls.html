@@ -1,0 +1,19 @@
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Calls</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let character of characters" (click)="goToCallDetail(character)">
+      <ion-avatar item-start>
+        <img [src]="character.img">
+      </ion-avatar>
+      <h2>{{ character.nombre }}</h2>
+    </ion-item>
+  </ion-list>
+</ion-content>
